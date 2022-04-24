@@ -1,5 +1,22 @@
-// Copyright 2017-2021 The Khronos Group Inc.
-// SPDX-License-Identifier: CC-BY-4.0
+// XX to be filled in by the merger of this PR (likely Jon)
+= *Advance Notice of Pending XML Registry Change (posted 2021-01-XX)*
+
+[WARNING]
+.Warning
+====
+Shortly after 2021-04-XX, we will be removing the old-style group blocks
+(contained within the `groups` section at the top of the XML registry)
+The groups are intended to contain all the possible legal values
+for corresponding function parameters, but it is likely that many
+of the groups are out of date relative to current OpenGL and OpenGL
+ES specifications, and the many extensions to those specifications.
+As of Wednesday 8th January 2020, these group blocks have been
+deprecated in favour of group attributes declared inline with
+the enumerant itself, which are currently the only actively updated
+source for groupings. For more information, see public issue 
+link:https://github.com/KhronosGroup/OpenGL-Registry/issues/335[#335].
+====
+
 
 = OpenGL-Registry
 
@@ -22,7 +39,7 @@ change the Registry, propose a pull request against the OpenGL-Registry
 repository and adding the appropriate extension specifications, making changes
 to the appropriate XML file, etc. Note that any changes you propose to
 reserved values in the registry are not official until your pull request is
-*accepted* into the main branch.
+*accepted* into the master branch.
 
 Feel free to post issues on the repository if it's unclear how to do
 something you need to with extensions, or if you find any problems.
@@ -54,7 +71,7 @@ To create a new extension specification, take these steps:
 * Request one or more blocks of unused enumerants for GL, GLX, or WGL
   depending on the needs of your extension, by adding the reservation(s) to
   the end of gl.xml, glx.xml, and/or wgl.xml.
-* Once the pull request modifying the XML files is accepted into main, you
+* Once the pull request modifying the XML files is accepted into master, you
   have control of those enumerant blocks.
 * Create an extension specification, following the model of existing vendor
   specifications under extensions/*vendor*/ .
