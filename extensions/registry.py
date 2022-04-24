@@ -1,6 +1,3 @@
-# Copyright 2017-2021 The Khronos Group Inc.
-# SPDX-License-Identifier: Apache-2.0
-
 registry = {
     'GL_3DFX_multisample' : {
         'number' : 207,
@@ -1809,11 +1806,6 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_EGL_image_storage.txt',
     },
-    'GL_EXT_EGL_image_storage_compression' : {
-        'esnumber' : 337,
-        'flags' : { 'public' },
-        'url' : 'extensions/EXT/EXT_EGL_image_storage_compression.txt',
-    },
     'GL_EXT_EGL_sync' : {
         'number' : 546,
         'flags' : { 'public' },
@@ -2600,15 +2592,9 @@ registry = {
         'url' : 'extensions/EXT/EXT_texture_snorm.txt',
     },
     'GL_EXT_texture_storage' : {
-        'number' : 556,
         'esnumber' : 108,
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_texture_storage.txt',
-    },
-    'GL_EXT_texture_storage_compression' : {
-        'esnumber' : 336,
-        'flags' : { 'public' },
-        'url' : 'extensions/EXT/EXT_texture_storage_compression.txt',
     },
     'GL_EXT_texture_swizzle' : {
         'number' : 356,
@@ -3015,13 +3001,6 @@ registry = {
         'supporters' : { 'MESA' },
         'url' : 'extensions/MESA/GLX_MESA_copy_sub_buffer.txt',
     },
-    'GL_MESA_bgra' : {
-        'esnumber' : 335,
-        'flags' : { 'public' },
-        'supporters' : { 'MESA' },
-        'url' : 'extensions/MESA/MESA_bgra.txt',
-    },
-
     'GL_MESA_framebuffer_flip_x' : {
         'number' : 548,
         'esnumber' : 327,
@@ -4557,15 +4536,10 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/QCOM/QCOM_motion_estimation.txt',
     },
-    'GL_QCOM_frame_extrapolation' : {
+    'QCOM_frame_extrapolation' : {
         'esnumber' : 333,
         'flags' : { 'public' },
         'url' : 'extensions/QCOM/QCOM_frame_extrapolation.txt',
-    },
-    'GL_QCOM_render_shared_exponent' : {
-        'esnumber' : 334,
-        'flags' : { 'public' },
-        'url' : 'extensions/QCOM/QCOM_render_shared_exponent.txt',
     },
     'GL_QCOM_performance_monitor_global_mode' : {
         'esnumber' : 56,
