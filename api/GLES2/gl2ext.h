@@ -19,7 +19,7 @@ extern "C" {
 #define GL_APIENTRYP GL_APIENTRY*
 #endif
 
-/* Generated on date 20211115 */
+/* Generated on date 20210107 */
 
 /* Generated C header for:
  * API: gles2
@@ -1092,13 +1092,6 @@ GL_APICALL void GL_APIENTRY glEGLImageTargetTexStorageEXT (GLenum target, GLeglI
 GL_APICALL void GL_APIENTRY glEGLImageTargetTextureStorageEXT (GLuint texture, GLeglImageOES image, const GLint* attrib_list);
 #endif
 #endif /* GL_EXT_EGL_image_storage */
-
-#ifndef GL_EXT_EGL_image_storage_compression
-#define GL_EXT_EGL_image_storage_compression 1
-#define GL_SURFACE_COMPRESSION_EXT        0x96C0
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_NONE_EXT 0x96C1
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_DEFAULT_EXT 0x96C2
-#endif /* GL_EXT_EGL_image_storage_compression */
 
 #ifndef GL_EXT_YUV_target
 #define GL_EXT_YUV_target 1
@@ -2251,29 +2244,6 @@ GL_APICALL void GL_APIENTRY glTextureStorage3DEXT (GLuint texture, GLenum target
 #endif
 #endif /* GL_EXT_texture_storage */
 
-#ifndef GL_EXT_texture_storage_compression
-#define GL_EXT_texture_storage_compression 1
-#define GL_NUM_SURFACE_COMPRESSION_FIXED_RATES_EXT 0x8F6E
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_1BPC_EXT 0x96C4
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_2BPC_EXT 0x96C5
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_3BPC_EXT 0x96C6
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_4BPC_EXT 0x96C7
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_5BPC_EXT 0x96C8
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_6BPC_EXT 0x96C9
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_7BPC_EXT 0x96CA
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_8BPC_EXT 0x96CB
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_9BPC_EXT 0x96CC
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_10BPC_EXT 0x96CD
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_11BPC_EXT 0x96CE
-#define GL_SURFACE_COMPRESSION_FIXED_RATE_12BPC_EXT 0x96CF
-typedef void (GL_APIENTRYP PFNTEXSTORAGEATTRIBS2DEXTPROC) (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, const int *attrib_list);
-typedef void (GL_APIENTRYP PFNTEXSTORAGEATTRIBS3DEXTPROC) (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, const int *attrib_list);
-#ifdef GL_GLEXT_PROTOTYPES
-GL_APICALL void GL_APIENTRY TexStorageAttribs2DEXT (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, const int *attrib_list);
-GL_APICALL void GL_APIENTRY TexStorageAttribs3DEXT (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, const int *attrib_list);
-#endif
-#endif /* GL_EXT_texture_storage_compression */
-
 #ifndef GL_EXT_texture_type_2_10_10_10_REV
 #define GL_EXT_texture_type_2_10_10_10_REV 1
 #define GL_UNSIGNED_INT_2_10_10_10_REV_EXT 0x8368
@@ -2473,11 +2443,6 @@ GL_APICALL void GL_APIENTRY glGetPerfQueryIdByNameINTEL (GLchar *queryName, GLui
 GL_APICALL void GL_APIENTRY glGetPerfQueryInfoINTEL (GLuint queryId, GLuint queryNameLength, GLchar *queryName, GLuint *dataSize, GLuint *noCounters, GLuint *noInstances, GLuint *capsMask);
 #endif
 #endif /* GL_INTEL_performance_query */
-
-#ifndef GL_MESA_bgra
-#define GL_MESA_bgra 1
-#define GL_BGR_EXT                        0x80E0
-#endif /* GL_MESA_bgra */
 
 #ifndef GL_MESA_framebuffer_flip_x
 #define GL_MESA_framebuffer_flip_x 1
@@ -3346,7 +3311,7 @@ typedef void (GL_APIENTRYP PFNGLSTENCILTHENCOVERFILLPATHNVPROC) (GLuint path, GL
 typedef void (GL_APIENTRYP PFNGLSTENCILTHENCOVERSTROKEPATHNVPROC) (GLuint path, GLint reference, GLuint mask, GLenum coverMode);
 typedef void (GL_APIENTRYP PFNGLSTENCILTHENCOVERFILLPATHINSTANCEDNVPROC) (GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
 typedef void (GL_APIENTRYP PFNGLSTENCILTHENCOVERSTROKEPATHINSTANCEDNVPROC) (GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
-typedef GLenum (GL_APIENTRYP PFNGLPATHGLYPHINDEXRANGENVPROC) (GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint pathParameterTemplate, GLfloat emScale, GLuint *baseAndCount);
+typedef GLenum (GL_APIENTRYP PFNGLPATHGLYPHINDEXRANGENVPROC) (GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint pathParameterTemplate, GLfloat emScale, GLuint baseAndCount[2]);
 typedef GLenum (GL_APIENTRYP PFNGLPATHGLYPHINDEXARRAYNVPROC) (GLuint firstPathName, GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
 typedef GLenum (GL_APIENTRYP PFNGLPATHMEMORYGLYPHINDEXARRAYNVPROC) (GLuint firstPathName, GLenum fontTarget, GLsizeiptr fontSize, const void *fontData, GLsizei faceIndex, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
 typedef void (GL_APIENTRYP PFNGLPROGRAMPATHFRAGMENTINPUTGENNVPROC) (GLuint program, GLint location, GLenum genMode, GLint components, const GLfloat *coeffs);
@@ -3423,7 +3388,7 @@ GL_APICALL void GL_APIENTRY glStencilThenCoverFillPathNV (GLuint path, GLenum fi
 GL_APICALL void GL_APIENTRY glStencilThenCoverStrokePathNV (GLuint path, GLint reference, GLuint mask, GLenum coverMode);
 GL_APICALL void GL_APIENTRY glStencilThenCoverFillPathInstancedNV (GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
 GL_APICALL void GL_APIENTRY glStencilThenCoverStrokePathInstancedNV (GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
-GL_APICALL GLenum GL_APIENTRY glPathGlyphIndexRangeNV (GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint pathParameterTemplate, GLfloat emScale, GLuint *baseAndCount);
+GL_APICALL GLenum GL_APIENTRY glPathGlyphIndexRangeNV (GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint pathParameterTemplate, GLfloat emScale, GLuint baseAndCount[2]);
 GL_APICALL GLenum GL_APIENTRY glPathGlyphIndexArrayNV (GLuint firstPathName, GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
 GL_APICALL GLenum GL_APIENTRY glPathMemoryGlyphIndexArrayNV (GLuint firstPathName, GLenum fontTarget, GLsizeiptr fontSize, const void *fontData, GLsizei faceIndex, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
 GL_APICALL void GL_APIENTRY glProgramPathFragmentInputGenNV (GLuint program, GLint location, GLenum genMode, GLint components, const GLfloat *coeffs);
@@ -3868,10 +3833,6 @@ GL_APICALL void GL_APIENTRY glTexEstimateMotionRegionsQCOM (GLuint ref, GLuint t
 #define GL_QCOM_perfmon_global_mode 1
 #define GL_PERFMON_GLOBAL_MODE_QCOM       0x8FA0
 #endif /* GL_QCOM_perfmon_global_mode */
-
-#ifndef GL_QCOM_render_shared_exponent
-#define GL_QCOM_render_shared_exponent 1
-#endif /* GL_QCOM_render_shared_exponent */
 
 #ifndef GL_QCOM_shader_framebuffer_fetch_noncoherent
 #define GL_QCOM_shader_framebuffer_fetch_noncoherent 1
