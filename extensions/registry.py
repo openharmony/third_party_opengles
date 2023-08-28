@@ -1,3 +1,6 @@
+# Copyright 2017-2021 The Khronos Group Inc.
+# SPDX-License-Identifier: Apache-2.0
+
 registry = {
     'GL_3DFX_multisample' : {
         'number' : 207,
@@ -1806,11 +1809,22 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_EGL_image_storage.txt',
     },
+    'GL_EXT_EGL_image_storage_compression' : {
+        'esnumber' : 337,
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_EGL_image_storage_compression.txt',
+    },
     'GL_EXT_EGL_sync' : {
         'number' : 546,
         'flags' : { 'public' },
         'supporters' : { 'MESA' },
         'url' : 'extensions/EXT/EXT_EGL_sync.txt',
+    },
+    'GL_EXT_fragment_shading_rate' : {
+        'esnumber' : 340,
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_fragment_shading_rate.txt',
+        'alias' : { 'GL_EXT_fragment_shading_rate_primitive', 'GL_EXT_fragment_shading_rate_attachment' },
     },
     'GL_EXT_memory_object' : {
         'number' : 503,
@@ -1859,6 +1873,13 @@ registry = {
         'number' : 316,
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_framebuffer_blit.txt',
+    },
+    'GL_EXT_framebuffer_blit_layers' : {
+        'number' : 558,
+        'esnumber' : 341,
+        'supporters' : { 'MESA' },
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_framebuffer_blit_layers.txt',
     },
     'GL_EXT_framebuffer_multisample' : {
         'number' : 317,
@@ -2202,6 +2223,12 @@ registry = {
         'supporters' : { '3DFX', 'NVIDIA', 'REND' },
         'url' : 'extensions/EXT/EXT_secondary_color.txt',
     },
+    'GL_EXT_separate_depth_stencil' : {
+        'esnumber' : 338,
+        'flags' : { 'public' },
+        'supporters' : { 'BRCM' },
+        'url' : 'extensions/EXT/EXT_separate_depth_stencil.txt',
+    },
     'GL_EXT_separate_shader_objects' : {
         'number' : 377,
         'esnumber' : 101,
@@ -2270,6 +2297,12 @@ registry = {
         'esnumber' : 253,
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_shader_pixel_local_storage2.txt',
+    },
+    'GL_EXT_shader_samples_identical' : {
+        'number' : 557,
+        'esnumber' : 339,
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_shader_samples_identical.txt',
     },
     'GL_EXT_shader_texture_lod' : {
         'esnumber' : 77,
@@ -2592,9 +2625,15 @@ registry = {
         'url' : 'extensions/EXT/EXT_texture_snorm.txt',
     },
     'GL_EXT_texture_storage' : {
+        'number' : 556,
         'esnumber' : 108,
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_texture_storage.txt',
+    },
+    'GL_EXT_texture_storage_compression' : {
+        'esnumber' : 336,
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_texture_storage_compression.txt',
     },
     'GL_EXT_texture_swizzle' : {
         'number' : 356,
@@ -2846,6 +2885,11 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/IMG/IMG_user_clip_plane.txt',
     },
+    'GL_IMG_tile_region_protection' : {
+        'scnumber' : 1,
+        'flags' : { 'public' },
+        'url' : 'extensions/IMG/IMG_tile_region_protection.txt',
+    },
     'GL_INGR_color_clamp' : {
         'number' : 174,
         'flags' : { 'public' },
@@ -3001,6 +3045,13 @@ registry = {
         'supporters' : { 'MESA' },
         'url' : 'extensions/MESA/GLX_MESA_copy_sub_buffer.txt',
     },
+    'GL_MESA_bgra' : {
+        'esnumber' : 335,
+        'flags' : { 'public' },
+        'supporters' : { 'MESA' },
+        'url' : 'extensions/MESA/MESA_bgra.txt',
+    },
+
     'GL_MESA_framebuffer_flip_x' : {
         'number' : 548,
         'esnumber' : 327,
@@ -4536,10 +4587,15 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/QCOM/QCOM_motion_estimation.txt',
     },
-    'QCOM_frame_extrapolation' : {
+    'GL_QCOM_frame_extrapolation' : {
         'esnumber' : 333,
         'flags' : { 'public' },
         'url' : 'extensions/QCOM/QCOM_frame_extrapolation.txt',
+    },
+    'GL_QCOM_render_shared_exponent' : {
+        'esnumber' : 334,
+        'flags' : { 'public' },
+        'url' : 'extensions/QCOM/QCOM_render_shared_exponent.txt',
     },
     'GL_QCOM_performance_monitor_global_mode' : {
         'esnumber' : 56,
