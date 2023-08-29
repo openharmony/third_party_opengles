@@ -52,9 +52,11 @@ Note:If the text contains special characters, please escape them according to th
 -->
 <configuration>
     <oatconfig>
-        <licensefile>COPYING</licensefile>
+        <licensefile>xml/README.adoc</licensefile>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
+            <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="third_party/openGLES/CODE_OF_CONDUCT.adoc*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
+            <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="third_party/openGLES/README.adoc*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
                 <filteritem type="filename" name="README.OpenSource"/>
@@ -68,5 +70,27 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filename" name="README"/>
             </filefilter>
         </filefilterlist>
+        <licencematherlist>
+        <licensematcher name="SGI-B-1.0 License" desc="License for SGI-B-1.0" >
+    <licensetext name="
+** License Applicability. Except to the extent portions of this file are
+** made subject to an alternative license as permitted in the SGI Free
+** Software License B, Version 1.0 (the "License"), the contents of this
+** file are subject only to the provisions of the License. You may not use
+** this file except in compliance with the License. You may obtain a copy
+** of the License at Silicon Graphics, Inc., attn: Legal Services, 1600
+** Amphitheatre Parkway, Mountain View, CA 94043-1351, or at:
+     " desc=""/>
+    <licensetext name="
+* Copyright 1991-2000 Silicon Graphics, Inc. This document is 
+* licensed under the SGI Free Software B License. For details, see
+* http://oss.sgi.com/projects/FreeB/
+     " desc=""/>
+    <licensetext name="
+* This document is licensed under the SGI Free Software B License Version
+* 2.0. For details, see http://oss.sgi.com/projects/FreeB/ .
+     " desc=""/>
+</licensematcher>
+</licencematherlist>
     </oatconfig>
 </configuration>
