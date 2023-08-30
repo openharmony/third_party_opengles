@@ -1047,4 +1047,12 @@
 </li>
 <li value=554><a href="extensions/NV/NV_primitive_shading_rate.txt">GL_NV_primitive_shading_rate</a>
 </li>
+<li value=555><a href="extensions/EXT/EXT_texture_sRGB_RG8.txt">GL_EXT_texture_sRGB_RG8</a>
+</li>
+<li value=556><a href="extensions/EXT/EXT_texture_storage.txt">GL_EXT_texture_storage</a>
+</li>
+<li value=557><a href="extensions/EXT/EXT_shader_samples_identical.txt">GL_EXT_shader_samples_identical</a>
+</li>
+<li value=558><a href="extensions/EXT/EXT_framebuffer_blit_layers.txt">GL_EXT_framebuffer_blit_layers</a>
+</li>
 </ol>
