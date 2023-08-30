@@ -55,9 +55,9 @@ Note:If the text contains special characters, please escape them according to th
         <licensefile>xml/README.adoc</licensefile>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
-                <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="CODE_OF_CONDUCT.adoc*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
-                <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="README.adoc*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
-                <policyitem type="compatibility" name="SPDX:CC-BY-4.0" path="README.adoc*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
+                <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="CODE_OF_CONDUCT.adoc" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
+                <policyitem type="compatibility" name="SPDC:CC-BY-4.0" path="README.adoc" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
+                <policyitem type="compatibility" name="SPDX:CC-BY-4.0" path="README.adoc" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="相关几个文件是文档文件"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility, license header policies">
                 <filteritem type="filename" name="README.OpenSource" desc=""/>
