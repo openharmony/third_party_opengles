@@ -691,6 +691,24 @@
 </li>
 <li value=332><a href="extensions/NV/NV_primitive_shading_rate.txt">GL_NV_primitive_shading_rate</a>
 </li>
-<li value=333><a href="extensions/QCOM/QCOM_frame_extrapolation.txt">QCOM_frame_extrapolation</a>
+<li value=333><a href="extensions/QCOM/QCOM_frame_extrapolation.txt">GL_QCOM_frame_extrapolation</a>
+</li>
+<li value=334><a href="extensions/QCOM/QCOM_render_shared_exponent.txt">GL_QCOM_render_shared_exponent</a>
+</li>
+<li value=335><a href="extensions/MESA/MESA_bgra.txt">GL_MESA_bgra</a>
+</li>
+<li value=336><a href="extensions/EXT/EXT_texture_storage_compression.txt">GL_EXT_texture_storage_compression</a>
+</li>
+<li value=337><a href="extensions/EXT/EXT_EGL_image_storage_compression.txt">GL_EXT_EGL_image_storage_compression</a>
+</li>
+<li value=338><a href="extensions/EXT/EXT_separate_depth_stencil.txt">GL_EXT_separate_depth_stencil</a>
+</li>
+<li value=339><a href="extensions/EXT/EXT_shader_samples_identical.txt">GL_EXT_shader_samples_identical</a>
+</li>
+<li value=340><a href="extensions/EXT/EXT_fragment_shading_rate.txt">GL_EXT_fragment_shading_rate</a>
+
+    <br> <a href="extensions/EXT/EXT_fragment_shading_rate.txt">GL_EXT_fragment_shading_rate_attachment</a>
+
+    <br> <a href="extensions/EXT/EXT_fragment_shading_rate.txt">GL_EXT_fragment_shading_rate_primitive</a>
 </li>
 </ol>

@@ -24,7 +24,7 @@ API: </p>
 
 <p> The web registry is backed by a <a
     href="https://github.com/KhronosGroup/OpenGL-Registry"> github
-    repository</a>. Changes committed to the <b>master</b> branch of the
+    repository</a>. Changes committed to the <b>main</b> branch of the
     repository are reflected on the website. The repository includes
     everything visible on the registry website - specifications, extensions,
     headers, XML, and the index pages such as this one - as well as
@@ -38,7 +38,7 @@ API: </p>
     for new extension APIs. A set of Python scripts are provided to load the
     XML files and process them into header files. </p>
 
-<p> See <a href="xml/README.md"> xml/README.md </a> for more details of the
+<p> See <a href="xml/README.adoc"> xml/README.adoc </a> for more details of the
     API XML registry, how to obtain enumerant allocations, create extension
     specifications and register them, and other related topics.
 

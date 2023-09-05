@@ -1,24 +1,13 @@
 #!/usr/bin/python3
 #
-# Copyright (c) 2017 The Khronos Group Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Copyright 2017-2021 The Khronos Group Inc.
+# SPDX-License-Identifier: Apache-2.0
 
 # makeindex.py - create HTML indices for the OpenGL extension registry
 #
 # Use: makeindex.py key
-# where 'key' is 'arbnumber', 'number', or 'esnumber' for ARB OpenGL,
-# Vendor OpenGL, and OpenGL ES extensions, respectively.
+# where 'key' is 'arbnumber', 'number', 'esnumber', or 'scnumber' for ARB
+# OpenGL, Vendor OpenGL, OpenGL ES, and OpenGL SC extensions, respectively.
 #
 # Only extensions marked 'public' will be included in the index.
 
@@ -28,6 +17,7 @@ import copy, os, re, string, sys
 #   arbnumber   OpenGL ARB extension # (if present)
 #   number      OpenGL vendor/EXT extension # (if present)
 #   esnumber    OpenGL ES extension # (if present)
+#   scregistry  OpenGL SC extension # (if present)
 #   flags       Set containing one or more of 'public' 'private' 'obsolete' 'incomplete'
 #   url         Relative URL to extension spec
 #   esurl       Relative URL to ES-specific extension spec (if present)
@@ -58,7 +48,7 @@ if __name__ == '__main__':
     exec(open(file).read())
 
     # Select extensions with the matching key
-    dict = {k:v for k,v in registry.items() if key in v.keys()}
+    dict = { k : v for k,v in registry.items() if key in v.keys()}
 
     # print('Filtered', len(dict), 'extensions')
 
