@@ -13,7 +13,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> The OpenGL registry is part of the <a
     href="http://www.khronos.org/registry/OpenGL/"> Combined OpenGL Registry </a>
     for OpenGL, OpenGL ES, and OpenGL SC, which includes the <a
-    href="xml/README.md">XML API registry</a> of reserved enumerants and
+    href="xml/README.adoc">XML API registry</a> of reserved enumerants and
     functions. </p>
 
 <p> <b>Table of Contents</b>
@@ -50,7 +50,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 
 <ul>
 <li> <b> Current Specifications (OpenGL 4.6) </b>
-<li> OpenGL 4.6 API Specification (October 22, 2019)
+<li> OpenGL 4.6 API Specification (May 5, 2022)
     <ul>
     <li> <a href="specs/gl/glspec46.core.pdf"> Core Profile Specification
          </a> </li>
