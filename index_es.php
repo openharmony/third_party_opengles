@@ -12,7 +12,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> The OpenGL ES Registry is part of the <a
     href="http://www.khronos.org/registry/OpenGL/"> Combined OpenGL Registry </a>
     for OpenGL, OpenGL ES, and OpenGL SC, which includes the <a
-    href="xml/README.md">XML API registry</a> of reserved enumerants and
+    href="xml/README.adoc">XML API registry</a> of reserved enumerants and
     functions. </p>
 
 <p> <b>Table of Contents</b>
@@ -61,7 +61,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
      Documentation </h2>
 
 <ul>
-<li> OpenGL ES 3.2 Specification (October 22, 2019)
+<li> OpenGL ES 3.2 Specification (May 5, 2022)
      <a href="specs/es/3.2/es_spec_3.2.pdf"> without changes marked </a>
      and
      <a href="specs/es/3.2/es_spec_3.2.withchanges.pdf"> with changes marked </a>. </li>
