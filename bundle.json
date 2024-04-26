@@ -27,7 +27,15 @@
         },
         "build": {
             "sub_component": [],
-            "inner_kits": [],
+            "inner_kits": [
+                {
+                    "name": "//third_party/openGLES:libGLES",
+                    "header": {
+                      "header_files": [],
+                      "header_base": "//third_party/openGLES/api/"
+                    }
+                }
+            ],
             "test": []
         }
     }
