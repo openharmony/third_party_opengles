@@ -16,6 +16,6 @@ config("libGLES_public_config") {
   include_dirs = [ "api" ]
 }
 
-ohos_source_set("libGLES") {
+ohos_static_library("libGLES") {
   public_configs = [ ":libGLES_public_config" ]
 }
