@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registry>
     <comment>
-Copyright 2013-2020 The Khronos Group Inc.
+Copyright 2013-2025 The Khronos Group Inc.
 SPDX-License-Identifier: Apache-2.0
 
 This file, gl.xml, is the OpenGL and OpenGL API Registry. The canonical
@@ -4086,25 +4086,25 @@ typedef unsigned int GLhandleARB;
         <enum value="0x88DD" name="GL_MATRIX29_ARB"/>
         <enum value="0x88DE" name="GL_MATRIX30_ARB"/>
         <enum value="0x88DF" name="GL_MATRIX31_ARB"/>
-        <enum value="0x88E0" name="GL_STREAM_DRAW" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E0" name="GL_STREAM_DRAW" group="BufferUsageARB"/>
         <enum value="0x88E0" name="GL_STREAM_DRAW_ARB"/>
-        <enum value="0x88E1" name="GL_STREAM_READ" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E1" name="GL_STREAM_READ" group="BufferUsageARB"/>
         <enum value="0x88E1" name="GL_STREAM_READ_ARB"/>
-        <enum value="0x88E2" name="GL_STREAM_COPY" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E2" name="GL_STREAM_COPY" group="BufferUsageARB"/>
         <enum value="0x88E2" name="GL_STREAM_COPY_ARB"/>
             <unused start="0x88E3" vendor="NV" comment="To extend ARB_vbo"/>
-        <enum value="0x88E4" name="GL_STATIC_DRAW" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E4" name="GL_STATIC_DRAW" group="BufferUsageARB"/>
         <enum value="0x88E4" name="GL_STATIC_DRAW_ARB"/>
-        <enum value="0x88E5" name="GL_STATIC_READ" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E5" name="GL_STATIC_READ" group="BufferUsageARB"/>
         <enum value="0x88E5" name="GL_STATIC_READ_ARB"/>
-        <enum value="0x88E6" name="GL_STATIC_COPY" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E6" name="GL_STATIC_COPY" group="BufferUsageARB"/>
         <enum value="0x88E6" name="GL_STATIC_COPY_ARB"/>
             <unused start="0x88E7" vendor="NV" comment="To extend ARB_vbo"/>
-        <enum value="0x88E8" name="GL_DYNAMIC_DRAW" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E8" name="GL_DYNAMIC_DRAW" group="BufferUsageARB"/>
         <enum value="0x88E8" name="GL_DYNAMIC_DRAW_ARB"/>
-        <enum value="0x88E9" name="GL_DYNAMIC_READ" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88E9" name="GL_DYNAMIC_READ" group="BufferUsageARB"/>
         <enum value="0x88E9" name="GL_DYNAMIC_READ_ARB"/>
-        <enum value="0x88EA" name="GL_DYNAMIC_COPY" group="VertexBufferObjectUsage,BufferUsageARB"/>
+        <enum value="0x88EA" name="GL_DYNAMIC_COPY" group="BufferUsageARB"/>
         <enum value="0x88EA" name="GL_DYNAMIC_COPY_ARB"/>
         <enum value="0x88EB" name="GL_PIXEL_PACK_BUFFER" group="CopyBufferSubDataTarget,BufferTargetARB,BufferStorageTarget"/>
         <enum value="0x88EB" name="GL_PIXEL_PACK_BUFFER_ARB"/>
@@ -4575,6 +4575,7 @@ typedef unsigned int GLhandleARB;
         <enum value="0x8BBB" name="GL_FRAMEBUFFER_FLIP_Y_MESA"/>
         <enum value="0x8BBC" name="GL_FRAMEBUFFER_FLIP_X_MESA" />
         <enum value="0x8BBD" name="GL_FRAMEBUFFER_SWAP_XY_MESA" />
+        <enum value="0x8BBE" name="GL_CONST_BW_TILING_MESA"/>
     </enums>
 
     <enums namespace="GL" start="0x8BC0" end="0x8BFF" vendor="QCOM" comment="Reassigned from AMD to QCOM">
@@ -7031,6 +7032,16 @@ typedef unsigned int GLhandleARB;
             <unused start="0x9740" end="0x975F" vendor="MESA"/>
     </enums>
 
+    <enums namespace="GL" start="0x9760" end="0x976F" vendor="QCOM" comment="Reserved for Ashish Mathur">
+            <unused start="0x9760" end="0x976F" vendor="QCOM"/>
+    </enums>
+
+    <enums namespace="GL" start="0x9770" end="0x977F" vendor="HUAWEI" comment="Reserved for Pan Gao">
+        <enum value="0x9770" name="GL_HUAWEI_SHADER_BINARY" group="ShaderBinaryFormat"/>
+        <enum value="0x9771" name="GL_HUAWEI_PROGRAM_BINARY"/>
+            <unused start="0x9772" end="0x977F" vendor="HUAWEI"/>
+    </enums>
+
 <!-- Enums reservable for future use. To reserve a new range, allocate one
      or more multiples of 16 starting at the lowest available point in this
      block and note it in a new <enums> block immediately above.
@@ -7040,8 +7051,8 @@ typedef unsigned int GLhandleARB;
      file) File requests in the Khronos Bugzilla, OpenGL project, Registry
      component. -->
 
-    <enums namespace="GL" start="0x9760" end="99999" vendor="ARB" comment="RESERVED FOR FUTURE ALLOCATIONS BY KHRONOS">
-        <unused start="0x9760" end="99999" comment="RESERVED"/>
+    <enums namespace="GL" start="0x9780" end="99999" vendor="ARB" comment="RESERVED FOR FUTURE ALLOCATIONS BY KHRONOS">
+        <unused start="0x9780" end="99999" comment="RESERVED"/>
     </enums>
 
 <!-- Historical large block allocations, all unused except (in older days) by IBM -->
@@ -19174,14 +19185,14 @@ typedef unsigned int GLhandleARB;
             <param class="buffer"><ptype>GLuint</ptype> <name>buffer</name></param>
             <param kind="BufferSize"><ptype>GLsizeiptr</ptype> <name>size</name></param>
             <param len="size">const void *<name>data</name></param>
-            <param group="VertexBufferObjectUsage"><ptype>GLenum</ptype> <name>usage</name></param>
+            <param group="BufferUsageARB"><ptype>GLenum</ptype> <name>usage</name></param>
         </command>
         <command>
             <proto>void <name>glNamedBufferDataEXT</name></proto>
             <param class="buffer"><ptype>GLuint</ptype> <name>buffer</name></param>
             <param><ptype>GLsizeiptr</ptype> <name>size</name></param>
             <param len="COMPSIZE(size)">const void *<name>data</name></param>
-            <param group="VertexBufferObjectUsage"><ptype>GLenum</ptype> <name>usage</name></param>
+            <param group="BufferUsageARB"><ptype>GLenum</ptype> <name>usage</name></param>
         </command>
         <command>
             <proto>void <name>glNamedBufferPageCommitmentARB</name></proto>
@@ -42890,6 +42901,16 @@ typedef unsigned int GLhandleARB;
                 <enum name="GL_TEXTURE_PRE_SPECULAR_HP"/>
             </require>
         </extension>
+        <extension name="GL_HUAWEI_program_binary" supported="gles2">
+            <require>
+                <enum name="GL_HUAWEI_PROGRAM_BINARY"/>
+            </require>
+        </extension>
+        <extension name="GL_HUAWEI_shader_binary" supported="gles2">
+            <require>
+                <enum name="GL_HUAWEI_SHADER_BINARY"/>
+            </require>
+        </extension>
         <extension name="GL_IBM_cull_vertex" supported="gl">
             <require>
                 <enum name="GL_CULL_VERTEX_IBM"/>
@@ -43486,6 +43507,11 @@ typedef unsigned int GLhandleARB;
             </require>
         </extension>
         <extension name="GL_MESA_shader_integer_functions" supported="gl|gles2"/>
+        <extension name="GL_MESA_texture_const_bandwidth" supported="gl|gles2">
+            <require>
+                <enum name="GL_CONST_BW_TILING_MESA"/>
+            </require>
+        </extension>
         <extension name="GL_MESA_tile_raster_order" supported="gl">
             <require>
                 <enum name="GL_TILE_RASTER_ORDER_FIXED_MESA"/>
@@ -45732,6 +45758,7 @@ typedef unsigned int GLhandleARB;
                 <enum name="GL_TEXTURE_EXTERNAL_OES"/>
                 <enum name="GL_TEXTURE_BINDING_EXTERNAL_OES"/>
                 <enum name="GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES"/>
+                <command name="glEGLImageTargetTexture2DOES"/>
             </require>
             <require api="gles2">
                 <enum name="GL_SAMPLER_EXTERNAL_OES"/>

@@ -2248,6 +2248,11 @@ registry = {
         'flags' : { 'public' },
         'url' : 'extensions/EXT/EXT_separate_specular_color.txt',
     },
+    'GL_EXT_shader_clock' : {
+        'esnumber' : 348,
+        'flags' : { 'public' },
+        'url' : 'extensions/EXT/EXT_shader_clock.txt',
+    },
     'GL_EXT_shader_framebuffer_fetch' : {
         'number' : 520,
         'esnumber' : 122,
@@ -2789,6 +2794,16 @@ registry = {
         'supporters' : { 'HP' },
         'url' : 'extensions/HP/HP_texture_lighting.txt',
     },
+    'GL_HUAWEI_program_binary' : {
+        'esnumber' : 349,
+        'flags' : { 'public' },
+        'url' : 'extensions/HUAWEI/HUAWEI_program_binary.txt',
+    },
+    'GL_HUAWEI_shader_binary' : {
+        'esnumber' : 350,
+        'flags' : { 'public' },
+        'url' : 'extensions/HUAWEI/HUAWEI_shader_binary.txt',
+    },
     'GL_IBM_cull_vertex' : {
         'number' : 199,
         'flags' : { 'public' },
@@ -3142,6 +3157,13 @@ registry = {
         'flags' : { 'public' },
         'supporters' : { 'MESA' },
         'url' : 'extensions/MESA/GLX_MESA_swap_control.txt',
+    },
+    'GL_MESA_texture_const_bandwidth' : {
+        'number' : 560,
+        'esnumber' : 347,
+        'flags' : { 'public' },
+        'supporters' : { 'MESA' },
+        'url' : 'extensions/MESA/MESA_texture_const_bandwidth.txt',
     },
     'GL_MESA_tile_raster_order' : {
         'number' : 515,
