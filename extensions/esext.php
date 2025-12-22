@@ -723,4 +723,12 @@
 </li>
 <li value=346><a href="extensions/QCOM/QCOM_ycbcr_degamma.txt">GL_QCOM_ycbcr_degamma</a>
 </li>
+<li value=347><a href="extensions/MESA/MESA_texture_const_bandwidth.txt">GL_MESA_texture_const_bandwidth</a>
+</li>
+<li value=348><a href="extensions/EXT/EXT_shader_clock.txt">GL_EXT_shader_clock</a>
+</li>
+<li value=349><a href="extensions/HUAWEI/HUAWEI_program_binary.txt">GL_HUAWEI_program_binary</a>
+</li>
+<li value=350><a href="extensions/HUAWEI/HUAWEI_shader_binary.txt">GL_HUAWEI_shader_binary</a>
+</li>
 </ol>
