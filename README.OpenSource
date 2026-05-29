@@ -6,7 +6,6 @@
         "Version Number": "31db35a53f7e64d3e03e35ec47ccfd6079b792d7",
         "Owner": "lizheng2@huawei.com",
         "Upstream URL": "https://github.com/KhronosGroup/OpenGL-Registry.git",
-        "Description": "The OpenGL ES registry contains specifications of the core API and shading language; specifications of Khronos- and vendor-approved OpenGL ES extensions; header files corresponding to the specificatio",
-        "Dependencies": ""
+        "Description": "The OpenGL ES registry contains specifications of the core API and shading language; specifications of Khronos- and vendor-approved OpenGL ES extensions; header files corresponding to the specificatio"
     }
 ]
