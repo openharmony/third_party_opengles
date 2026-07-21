@@ -17,5 +17,6 @@ config("libGLES_public_config") {
 }
 
 ohos_static_library("libGLES") {
+  branch_protector_ret = "pac_ret"
   public_configs = [ ":libGLES_public_config" ]
 }
